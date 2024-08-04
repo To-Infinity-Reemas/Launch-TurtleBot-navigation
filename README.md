@@ -56,6 +56,12 @@ Three simulation environments are prepared for TurtleBot3.
 $ export TURTLEBOT3_MODEL=waffle
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
+<img width="519" alt="tur gazi" src="https://github.com/user-attachments/assets/b76dbd87-f0aa-41a7-a39e-53ab634dc2f5">
+
+
+<img width="519" alt="gazi" src="https://github.com/user-attachments/assets/7d269fce-ffa9-475e-ad19-fa7706d8e2bc">
+
+
 ## Opening SLAM
 ```
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
