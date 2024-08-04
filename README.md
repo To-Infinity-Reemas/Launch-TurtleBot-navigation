@@ -24,3 +24,54 @@ $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 ````
 this commend is also long and you should write it in one line.
+
+## Install TurtleBot3 Packages
+Install TurtleBot3 via Debian Packages.
+````
+$ sudo apt-get install ros-kinetic-dynamixel-sdk
+$ sudo apt-get install ros-kinetic-turtlebot3-msgs
+$ sudo apt-get install ros-kinetic-turtlebot3
+````
+
+## Install Simulation Package
+he TurtleBot3 Simulation Package requires turtlebot3 and turtlebot3_msgs packages as prerequisite.
+Without these prerequisite packages, the Simulation cannot be launched.
+````
+$ cd ~/catkin_ws/src/
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ cd ~/catkin_ws && catkin_make
+ ````
+## Launch Simulation World
+Three simulation environments are prepared for TurtleBot3. 
+
+1.Empty World
+
+2.TurtleBot3 World
+  
+3.TurtleBot3 House 
+
+##### i have choose the second "TurtleBot3 World" one so i will run this command
+
+```
+$ export TURTLEBOT3_MODEL=waffle
+$ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+## Opening SLAM
+```
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+```
+
+create a map and save it
+```
+rosrun map_server map_saver -f ~/map
+```
+then run this command:
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+## navigation
+start the navigation and load the saved map, using this command:
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='/home/muh/map.yaml'
+```
+now You can then move the robot !
