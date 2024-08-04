@@ -78,9 +78,13 @@ then run this command:
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 <img width="519" alt="89" src="https://github.com/user-attachments/assets/706387dc-80f4-4584-b85a-a2db67a8d93d">
+
 ## navigation
 start the navigation and load the saved map, using this command:
 ```
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='/home/muh/map.yaml'
 ```
+<img width="519" alt="90" src="https://github.com/user-attachments/assets/308a42e4-aaf7-45d9-be9f-dfd693290f67">
 now You can then move the robot !
+
+<img width="519" alt="image" src="https://github.com/user-attachments/assets/ea6b0965-98b3-4cbf-a873-f97680e73edc">
