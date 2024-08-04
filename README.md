@@ -67,6 +67,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
+<img width="519" alt="tur" src="https://github.com/user-attachments/assets/d0b0bc8d-6374-4430-bbd0-49c42ef927d5">
 
 create a map and save it
 ```
@@ -76,6 +77,7 @@ then run this command:
 ```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
+<img width="519" alt="89" src="https://github.com/user-attachments/assets/706387dc-80f4-4584-b85a-a2db67a8d93d">
 ## navigation
 start the navigation and load the saved map, using this command:
 ```
